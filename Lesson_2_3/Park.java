@@ -13,12 +13,11 @@ public class Park{
             a.printAttractionInfo();
         }
     }
-   
 
-    public static class Attraction{
-        String description;
-        String workHours;
-        int price;
+    private static class Attraction{
+        private String description;
+        private String workHours;
+        private int price;
 
         public Attraction(String description, String workHours, int price){
             this.description = description;
