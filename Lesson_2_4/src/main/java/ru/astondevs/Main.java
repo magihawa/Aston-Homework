@@ -6,15 +6,16 @@ public class Main {
         Cat[] cats = {
                 new Cat("Уголек"),
                 new Cat("Юки"),
-                new Cat("Ева"),
-                new Cat("Адам"),
+                new Cat("Пушок"),
+                new Cat("Дымок"),
         };
         Bowl bowl = new Bowl(0);
         bowl.addFood(5);
         bowl.addFood(5);
 
         for (Cat cat : cats) {
-            cat.eat(bowl, 2);
+            cat.eat(bowl, 5);
+            System.out.println(cat.getName() + (cat.isFull() ? " сыт. " : " не сыт."));
         }
 
         System.out.println("В миске осталось: " + bowl.getFoodAmount() + " ед. корма.");

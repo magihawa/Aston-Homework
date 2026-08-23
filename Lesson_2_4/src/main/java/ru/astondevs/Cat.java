@@ -13,15 +13,10 @@ public class Cat extends Animal {
     public void eat(Bowl bowl, int amount) {
         if (bowl.decreaseFood(amount)) {
             isFull = true;
-            System.out.println(getName() + " теперь сыт.");
-        } else {
-            System.out.println(getName() + " не насытился.");
         }
-
     }
 
     public boolean isFull() {
         return isFull;
     }
-
 }
