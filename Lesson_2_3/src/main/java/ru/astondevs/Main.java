@@ -1,4 +1,4 @@
-public class Main{
+public class Main {
     public static void main(String[] args) {
         Product[] goodsArray = new Product[5];
         goodsArray[0] = new Product("Samsung S25 Ultra", "01.02.2025",

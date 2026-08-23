@@ -8,7 +8,7 @@ public class Park {
     }
 
     public void printParkInfo() {
-        System.out.println("Парк: " + name);
+        System.out.println("\nПарк: " + name);
         for (Attraction a : attractions) {
             a.printAttractionInfo();
         }
