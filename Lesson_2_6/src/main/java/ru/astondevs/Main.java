@@ -3,7 +3,7 @@ package ru.astondevs;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
+import static ru.astondevs.StudentManager.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,7 +13,6 @@ public class Main {
                 new Student("Дмитрий", 1, 4, List.of(2, 3, 3))
         )
         );
-
 
         printStudents(new HashSet<>(students), 4);
         removeStudent(students);
@@ -30,23 +29,5 @@ public class Main {
         System.out.println(phoneBook.getPhones("Иванов"));
     }
 
-    public static void removeStudent(ArrayList<Student> students) {
-        students.removeIf(Student::shouldBeExcluded);
-    }
 
-    public static void advanceStudent(ArrayList<Student> students) {
-        for (Student s : students) {
-            s.ascendCourse();
-        }
-        students.removeIf(s -> s.getCourse() > s.getMaxCourse());
-    }
-
-    public static void printStudents(Set<Student> students, int course) {
-        System.out.println("\nСтуденты " + course + " курса:");
-        for (Student student : students) {
-            if (student.getCourse() == course) {
-                System.out.println("Имя студента: " + student.getName());
-            }
-        }
-    }
 }

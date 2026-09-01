@@ -1,6 +1,5 @@
 package ru.astondevs;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -29,7 +28,6 @@ public class Student {
         this.grades = grades;
     }
 
-
     public double getAvgGrade() {
         int sum = 0;
         if (grades == null || grades.isEmpty()) {
@@ -39,7 +37,6 @@ public class Student {
             sum += grade;
         }
         return (double) sum / grades.size();
-
     }
 
     public boolean shouldBeExcluded() {
@@ -62,6 +59,10 @@ public class Student {
 
     public int getMaxCourse() {
         return MAX_COURSE;
+    }
+
+    public List<Integer> getGrades() {
+        return grades;
     }
 }
 
