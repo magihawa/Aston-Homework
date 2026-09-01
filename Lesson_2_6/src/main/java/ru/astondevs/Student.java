@@ -60,9 +60,5 @@ public class Student {
     public int getMaxCourse() {
         return MAX_COURSE;
     }
-
-    public List<Integer> getGrades() {
-        return grades;
-    }
 }
 
