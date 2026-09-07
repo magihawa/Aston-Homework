@@ -1,9 +1,9 @@
 package ru.astondevs;
 
 import static ru.astondevs.Calculator.*;
-import static ru.astondevs.Factorial.*;
+import static ru.astondevs.Factorial.calculateFactorial;
 import static ru.astondevs.IntCompare.compareInts;
-import static ru.astondevs.TriangleArea.*;
+import static ru.astondevs.TriangleArea.getTriangleArea;
 
 public class Main {
     public static void main(String[] args) {
